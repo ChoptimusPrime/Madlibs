@@ -1,0 +1,20 @@
+<!-- Jon Compton
+     Springboard May 26 Cohort -->
+
+{% extends 'base.html' %}
+
+  {% block title %} MADLIBS! {% endblock %}
+
+  {% block message %} WELCOME TO MADLIBS! {% endblock %}
+
+  {% block content %}
+    <form id="form-container" action="/madlib">
+        {% for class in classes %}
+        <div class="form-group">
+            <label for={{ class }}>{{ class }}: </label>
+            <input type="text" name={{ class }} placeholder="Enter {{ class }}"/>
+        </div>
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+  {% endblock %}

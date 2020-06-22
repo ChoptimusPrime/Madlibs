@@ -1,0 +1,26 @@
+<!-- Jon Compton
+     Springboard May 26 Cohort -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>{% block message %} {% endblock %}</h1>
+      </header>
+      {% block content %}
+      {% endblock %}
+      <footer>
+        <p>&copy Jon Compton Springboard May 26 Cohort</p>
+      </footer>
+    </div>  
+
+</body>
+</html>
